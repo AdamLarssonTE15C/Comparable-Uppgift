@@ -35,9 +35,14 @@
 		}
 
 
-		public int compareTo(Person arg0) {
+		public int compareTo(Person pers) {
 			
-			return 0;
+			if(this.LastName.compareTo(pers.LastName) == 0){
+				return this.FirstName.compareTo(pers.FirstName);
+			}
+			else{
+				return this.LastName.compareTo(pers.LastName);
+			}
 		}
 		
 
